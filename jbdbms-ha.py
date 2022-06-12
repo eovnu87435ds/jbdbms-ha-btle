@@ -359,5 +359,5 @@ while True:
         if amps >= 0.2 or amps <= -0.2:
             z = 10
         else:
-            z = 6
+            z = 60
         time.sleep(z)
