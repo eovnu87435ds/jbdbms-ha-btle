@@ -19,3 +19,5 @@ This script now runs forever, and sets /data/bms/availability to "online" when a
 In the home-assistant folder is the snippet I pulled from configuration.yaml
 
 This is hardcoded for 13s. The data responses that feed into cellvolts2 grow with each cell.
+
+![Home Assistant Screenshot](https://raw.githubusercontent.com/eovnu87435ds/jbdbms-ha-btle/main/images/ha-jbdbms.PNG)
