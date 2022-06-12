@@ -1,0 +1,2 @@
+#!/bin/bash
+python /home/pi/jbdbms-ha-btle/jbdbms-ha.py -b 70:3E:97:07:F8:38 -m jbdbms -p yourMQTTpasswordHere

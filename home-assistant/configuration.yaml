@@ -1,0 +1,200 @@
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Voltage"
+    unit_of_measurement: "Volts"
+    value_template: "{{ value_json.volts }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Amperage"
+    unit_of_measurement: "Amps"
+    value_template: "{{ value_json.amps }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Watts"
+    unit_of_measurement: "Watts"
+    value_template: "{{ value_json.watts }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Capacity Remaining"
+    unit_of_measurement: "Ah"
+    value_template: "{{ value_json.remain }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Total Capacity"
+    unit_of_measurement: "Ah"
+    value_template: "{{ value_json.capacity }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cycles"
+    value_template: "{{ value_json.cycles }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+    
+    
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 1 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell1 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 2 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell2 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 3 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell3 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 4 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell4 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 5 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell5 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 6 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell6 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 7 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell7 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 8 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell8 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 9 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell9 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 10 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell10 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 11 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell11 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 12 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell12 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell 13 Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cell13 }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Lowest Cell Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cellsmin }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Highest Cell Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.cellsmax }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Cell Delta"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.delta }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Lowest Cell Number"
+    value_template: "{{ value_json.mincell }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Highest Cell Number"
+    value_template: "{{ value_json.maxcell }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: data/bms/gauge
+    name: "Battery Average Cell Voltage"
+    unit_of_measurement: "volts"
+    value_template: "{{ value_json.meancell }}"
+    availability_topic: data/bms/availability
+    payload_available: "online"
+    payload_not_available: "offline"
